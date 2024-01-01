@@ -1,0 +1,23 @@
+:root{
+   --bgclr :  #0b0a0d ;
+   --textclr : #f8f3ff;
+   --primaryclr : #653dc9;
+   --secclr : #fe7bb6 ;
+   --accentclr:#8e6fcd ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   background-color: var(--bgclr);
+   color: var(--textclr);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    
+}
