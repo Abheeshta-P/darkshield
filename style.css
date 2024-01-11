@@ -2,7 +2,7 @@
    --bgclr :  #0b0a0d ;
    --textclr : #f8f3ff;
    --primaryclr : #653dc9;
-   --secclr : #f43d8f ;
+   --secclr : #db3781 ;
    --accentclr:#8e6fcd ;
 }
 ::selection{
@@ -30,6 +30,7 @@ body{
 }
 nav{
     height: 65px;
+    width: 100%;
     background-color:#0b0a0d;
     /* backdrop-filter: blur(15px); */
     display: flex;
@@ -130,19 +131,44 @@ text-align: center;
     gap: 50px;
     width: 100%;
     display: flex;
-
     align-items: center;
     flex-direction: column;
     & h1{
         font-size: 6rem;
         text-align: center;
-
+        
     }
     & ol{
+        gap: 30px;
         display: flex;
         justify-content: space-evenly;
     }
     & li{
         list-style-type: none;
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    & h1{
+        margin-bottom: 30px;
+    }
+}
+.step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .image-step{
+        /* border: 6px solid var(--secclr); */
+        box-shadow: 0 0 15px var(--secclr);
+        border-radius: 10px;
+    }
+    & img{
+        width: 400px;
+        height: 300px;
+        
+        object-fit: cover;
+    }
+    & .second{
+        object-fit: contain;
     }
 }
