@@ -26,9 +26,11 @@
  }
  body{
      position: relative;
+     scroll-snap-type: y mandatory;
  
  }
  nav{
+    z-index: 100;
      height: 65px;
      width: 100%;
      background-color:#0b0a0d;
@@ -58,6 +60,8 @@
      height: 100vh;
      padding-top: 90px;
      /* padding: 50px 10px; */
+     scroll-snap-align: start;
+     scroll-margin-top: 50px;
  }
  .home{
      display: flex;
@@ -166,12 +170,62 @@
      }
  }
  .about-awarness{
-    font-size: 2.2rem;
-    
+    font-size: 1.8rem;
+    & h3{
+        font-size: 2.8rem;
+    }
+    & .cards{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+    }
     & h1{
         font-size: 6rem;
         text-align: center;
-
+        margin-bottom: 40px;
     }
-    
+    & .card-about{
+        border: 1px solid white;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 350px;
+        gap: 10px;
+        border-radius: 20px;
+        background: url(images/bg.avif);
+        background-position: center;
+        transition: transform 0.5s, box-shadow 0.5s;
+        &:hover{
+            box-shadow: 0 0 20px var(--secclr);
+            transform: translateY(-3%);
+            cursor: pointer;
+        }
+    }
+    .youtube{
+        border-radius: 20px;
+        border: 1px solid white;   
+        height: 300px;
+        transition: transform 0.5s, box-shadow 0.5s;
+        &:hover{
+            box-shadow: 0 0 20px var(--secclr);
+            transform: translateY(-3%);
+            cursor: pointer;
+        }
+    }
+
+    & iframe{
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    & p , & ul{
+        text-align: center;
+    }
+    & li{
+        list-style-type: none;
+    }
  }
