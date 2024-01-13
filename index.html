@@ -37,9 +37,9 @@
     <section class="about-awarness" id="about">
         <h1>About</h1>
         <div class="cards">
-            <div class="card-about"><h3>What is dark pattern?</h3><p>An e-commerce dark pattern is a deceptive design tactic in online shopping interfaces that tricks or manipulates users into unintended actions, impacting their shopping decisions and overall experience.</p></div>
+            <div class="card-about"><div class="front"><h3>What is dark pattern?</h3></div><div class="back"><p>An e-commerce dark pattern is a deceptive design tactic in online shopping interfaces that tricks or manipulates users into unintended actions, impacting their shopping decisions and overall experience.</p></div></div>
             <div class="youtube "><iframe src="https://www.youtube.com/embed/SyeZf50jQXU?si=cOlSQfiRN8z0Eh-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-            <div class="card-about"><h3>Examples</h3><p>
+            <div class="card-about"><div class="front"><h3>Examples</h3></div><div class="back">
                 <ul>
                     <li>Hidden Fees</li>
                     <li>Tricky Opt-Outs </li>
@@ -48,26 +48,30 @@
                     <li> Forced Account Creation </li>
                     
                 </ul>
-                </p>
+            </div>
         </div>
         </div>
 
     </section>
-    <section class="contactform">
-        <form action="" class="" id="contact">
-            <div class="name">
+    <section class="contactsec">
+        <h1>Contact Us</h1>
+        <form action="" class="contactform" id="contact">
+            <div class="name inputs">
+                <input type="text" required>
                 <label for="">Enter your Name</label>
-                <input type="text" placeholder="Enter name" required>
             </div>
-            <div class="mail">
+            <div class="mail inputs">
+                <input type="text"  required>
                 <label for="">Enter your Email</label>
-                <input type="text" placeholder="Enter email" required>
             </div>
             <div class="feedback">
-                <label for="">Enter your feedback</label>
                 <textarea name="" id="" cols="30" rows="10" ></textarea>
+                <label for="">Enter your feedback</label>
             </div>
-            <button>Submit</button>
+            <div class="button">
+                <button>Submit</button>
+            </div>
+            
         </form>
     </section>
 </body>
