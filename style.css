@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 :root{
     --bgclr :  #0b0a0d ;
     --textclr : #f8f3ff;
@@ -6,14 +7,14 @@
     --accentclr:#8e6fcd ;
  }
  ::selection{
-     color: var(--secclr);
+    color: var(--textclr);
+     background-color: var(--primaryclr);
  }
  *{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
  }
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
  html{
     background-color: var(--bgclr);
     color: var(--textclr);
@@ -258,9 +259,10 @@
         border: 2px solid var(--secclr);
         box-shadow: 0 0 10px var(--secclr);
     }
-    & textarea:focus + label{
+    & textarea:focus + label,
+    & textarea:valid + label{
         color: var(--secclr);
-        transform: translate(-95px,-98px) scale(0.88);
+        transform: translate(-95px,-123px) scale(0.88);
         padding-inline:5px ;
     }
     & .button{
@@ -327,11 +329,13 @@ justify-content: center;
         border: 2px solid var(--secclr);
         box-shadow: 0 0 10px var(--secclr);
     }
-    & input:focus + label{
+    & input:focus + label,
+    & input:valid + label{
         color: var(--secclr);
         transform: translate(-5px,-28px) scale(0.88);
         padding-inline:5px ;
-    }
+    }  
+    
 }
 .feedback{
     display: flex;
