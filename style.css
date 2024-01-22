@@ -324,8 +324,7 @@ justify-content: center;
     & input:hover{
         box-shadow: 0 0 10px var(--accentclr);
     }
-    & input:focus ,
-    & input:valid {
+    & input:focus {
         border: 2px solid var(--secclr);
         box-shadow: 0 0 10px var(--secclr);
     }
